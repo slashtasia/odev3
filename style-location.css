@@ -1,0 +1,273 @@
+
+/*---RESET-CSS---*/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Big Shoulders Display', cursive;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body{
+    line-height: 1;
+    min-width: 375px;
+    max-width: 500px;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    top: 0;
+    width: 260px;
+    height: 72px;
+    background-color: rgb(21, 21, 21);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    margin-left: 20%;
+}
+
+.button:after{
+    position: absolute;
+    text-align: center;
+    line-height: 5rem;
+    right: 205px;
+    content: url(./assets/icon-arrow-left.svg); /*Arrow-in-the button*/
+    width: 56px;
+    height: 72px;
+    background-color: rgb(213, 150, 108);
+}
+
+.button:hover {
+    background-color: rgb(213, 150, 108);
+}
+
+.button:hover::after {
+    background-color: rgb(21, 21, 21);
+}
+
+/*HARITA*/
+
+#map{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 600px;
+    width: 100%;
+    z-index: 0;
+
+}
+
+.content {
+    padding: 8% 3% 15% 3%;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    color: rgb(255, 255, 255);
+}
+
+.content h1{
+    font-size: 4.07em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-right: 30%;
+}
+
+.content h2{
+    font-size: 2.5em;
+    font-weight: 700 ;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color:rgb(213, 150, 108);
+}
+
+.content p{
+    margin-top: 5%;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: 'Outfit', sans-serif;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(213, 150, 108);
+    color: rgb(21, 21, 21);
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer h3:hover{
+    color: rgb(255, 255, 255);
+}
+
+.contacts{
+    margin: 10% 8%;
+}
+
+.contacts h3{
+    color: rgb(21, 21, 21);
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    cursor: pointer;
+}
+
+.contacts p{
+    margin-top: 10%;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.icons{
+    margin-top: 10%;
+}
+
+svg{
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+svg:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media screen and (min-width: 500px) {
+
+    body {
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /*PC*/
+
+    body {
+        min-width: 768px;
+        max-width: 930px;
+    }
+
+    /*CONTENT*/
+
+    .content {
+        display: inline-flex;
+        padding: 8% 5% 10% 5%;
+    }
+
+    .content h1 {
+        font-size: 5em;
+        padding-right: 12%;
+        cursor: default;
+    }
+
+
+    /*FOOTER*/
+
+    .contacts {
+        margin: 5% 6% 10% 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contacts p {
+        width: 40%;
+        margin: 0;
+    }
+
+    .icons {
+        margin: 0;
+        width: 15%;
+    }
+}
+
+
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+
+    body {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /*PC FLOW */
+
+    body {
+        min-width: 1200px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+
+    .button{
+        left: 10%;
+    }
+
+    /*CONTENT*/
+
+    .content {
+        display: inline-flex;
+        padding: 8% 10% 10% 10%;
+    }
+
+    .content h1 {
+        font-size: 6em;
+        padding-right: 25%;
+    }
+
+    .content h2 {
+        font-size: 3em;
+    }
+
+    /*FOOTER*/
+
+    .contacts{
+        margin: 5% 10% 5% 10%;
+    }
+
+}
+
+
+
+
+
+
